@@ -20,7 +20,7 @@ This pipeline:
 ## 🏗️ Project Structure
 
 
-
+```bash
 movie-sentiment-dvc/
 ├── data/
 │   ├── raw/              # Raw downloaded reviews (tracked by DVC)
@@ -36,3 +36,6 @@ movie-sentiment-dvc/
 ├── params.yaml           # Hyperparameters
 ├── requirements.txt      # Python dependencies
 └── README.md
+
+
+
