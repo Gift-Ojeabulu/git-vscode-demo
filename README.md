@@ -20,20 +20,19 @@ This pipeline:
 ## 🏗️ Project Structure
 
 
+
 movie-sentiment-dvc/
 ├── data/
-│ ├── raw/ # Raw downloaded reviews (DVC-tracked)
-│ └── processed/ # Train/test splits (DVC-tracked)
-├── models/ # Trained model pickle files (DVC-tracked)
-├── metrics/ # Evaluation metrics JSON
+│   ├── raw/              # Raw downloaded reviews (tracked by DVC)
+│   └── processed/        # Train/test splits (tracked by DVC)
+├── models/               # Trained model pickle files (tracked by DVC)
+├── metrics/              # Evaluation metrics JSON (tracked by DVC)
 ├── src/
-│ ├── download_data.py # Download and prepare raw data
-│ ├── preprocess.py # Clean and split data
-│ ├── train.py # Train the classifier
-│ └── evaluate.py # Evaluate performance
-├── dvc.yaml # Pipeline definition
-├── params.yaml # Hyperparameters
-├── requirements.txt # Dependencies
+│   ├── download_data.py  # Download and prepare raw data
+│   ├── preprocess.py     # Clean and split data
+│   ├── train.py          # Train the model
+│   └── evaluate.py       # Evaluate on test set
+├── dvc.yaml              # DVC pipeline definition
+├── params.yaml           # Hyperparameters
+├── requirements.txt      # Python dependencies
 └── README.md
-
-
